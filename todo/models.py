@@ -12,7 +12,9 @@ class Category(models.Model):
 class Note(models.Model):
     title = models.CharField(max_length=100, null=False, blank=False)
     content = models.TextField(null=True, blank=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(
+        Category, on_delete=models.CASCADE, null=True, blank=True
+    )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
