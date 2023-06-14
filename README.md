@@ -63,19 +63,13 @@
         + Powershell:
 
             ```Powershell
-            $env:token="TOKEN_TO_YOUR_BOT";
-            ```
-            ```Powershell
-            $env:service_file="SERVICE_FILE_FOR_GOOGLE_API";
+            $env:SECRET_KEY="SECRET_KEY_TO_YOUR_DJANGO_APP";
             ```
         
         + cmd:
 
             ```cmd
-            set token=TOKEN_TO_YOUR_BOT
-            ```
-            ```cmd
-            set service_file="SERVICE_FILE_FOR_GOOGLE_API"
+            set SECRET_KEY=SECRET_KEY_TO_YOUR_DJANGO_APP
             ```
 
     - For Linux, MacOS:
@@ -83,28 +77,20 @@
         + Bash:
 
             ```shell
-            export token="TOKEN_TO_YOUR_BOT"
+            export SECRET_KEY="SECRET_KEY_TO_YOUR_DJANGO_APP"
             ```
-            ```shell
-            export service_file="SERVICE_FILE_FOR_GOOGLE_API"
-            ```
+
 
 6. Run bot
 
     - For Windows:
 
         ```shell
-        cd .\src\
-        ```
-        ```shell
-        python .\bot.py
+        python .\manage.py runserver
         ```
 
     - For Linux, MacOS:
     
         ```shell
-        cd ./src/
-        ```      
-        ```shell
-        python3 bot.py
+        python3 manage.py runserver
         ```
