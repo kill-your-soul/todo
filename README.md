@@ -81,7 +81,7 @@
             ```
 
 
-6. Run bot
+6. Run Django server
 
     - For Windows:
 
